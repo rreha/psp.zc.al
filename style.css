@@ -8,6 +8,10 @@ body {
     background-size: cover;
 }
 
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent) ) {
+	document.getElementsByTagName('body')[0].style.background-image = "none";
+}
+
 a:link, a:visited {
   backdrop-filter: blur(10px) saturate(70%);
   color: white;
